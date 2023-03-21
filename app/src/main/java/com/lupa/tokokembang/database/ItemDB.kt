@@ -17,9 +17,5 @@ data class ItemDB(
     val itemDate: String,
     @ColumnInfo("quantity")
     val itemQuantity: Int,
-    /*@ColumnInfo("price")
-    val itemPrice: Double*/
 )
 
-fun ItemDB.getFormattedDate():String =
-    DateFormat.getDateInstance().format(itemDate)
